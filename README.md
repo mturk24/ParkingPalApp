@@ -26,31 +26,31 @@ A crowd sourced application that allows users to report the availability of park
 
 ### Model
 
-* Region
- ** Each region will contain a list of reports
+1. Region 
+  * Each region will contain a list of reports 
 
-* Report
- ** Time to live: an integer of how long this report will be stored
- ** GPS-Coordinate: a tuple location of where this report was filed
- ** Crowdedness: an integer {0..3} representing the crowdedness
- ** Price: an integer of the cost of the parking spot
- ** Other: A string of any additional info
+2. Report 
+  * Time to live: an integer of how long this report will be stored
+  * GPS-Coordinate: a tuple location of where this report was filed
+  * Crowdedness: an integer {0..3} representing the crowdedness
+  * Price: an integer of the cost of the parking spot
+  * Other: A string of any additional info
 
 ### View
 
-* Map View
-  ** Implements the Google Map API and shows highlighted regions (varying of color) of how crowded a parking spot is. On a click, this shows a popup of statsitics of the area
+1. Map View
+  * Implements the Google Map API and shows highlighted regions (varying of color) of how crowded a parking spot is. On a click, this shows a popup of statsitics of the area
 
-* Report View
-  ** A simple text based forum that allows users to file a `Report`
+2. Report View
+  * A simple text based forum that allows users to file a `Report`
 
 ### Controller
 
-* Report Submit
-  ** On click, saves the new Report and preforms a post request to our database. Region will then be updated locally. The application will periodically fetch from the database by checking a hash of the region to see if any new reports were brought up.
+1. Report Submit
+  * On click, saves the new Report and preforms a post request to our database. Region will then be updated locally. The application will periodically fetch from the database by checking a hash of the region to see if any new reports were brought up.
 
-* On Map Click
-  ** On click, modifies the map view to display statistics of the area.
+2. On Map Click
+  * On click, modifies the map view to display statistics of the area.
 
 ### Other Libraries
 
