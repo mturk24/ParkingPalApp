@@ -1,5 +1,4 @@
 # Parking Pal
-==============================
 
 ## Group Members
 
