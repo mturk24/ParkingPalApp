@@ -1,0 +1,6 @@
+framework module Pods_Parking_PalUITests {
+  umbrella header "Pods-Parking PalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

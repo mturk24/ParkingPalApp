@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F3C1D68FF76D4BE87530E47DAEAF253 /* Pods-Parking Pal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89028103D6F782C8AF91322C128A38CD /* Pods-Parking Pal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2126D9C5AFA2B04710FBDFF68D6C0088 /* Pods-Parking Pal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F5B8DF83B6734E5A04FF96B32C84C1 /* Pods-Parking Pal-dummy.m */; };
+		93968F3DB6A55AC6AC802C0C5175E2A1 /* Pods-Parking PalUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8065F1546CCC26891A3BB90E994C14 /* Pods-Parking PalUITests-dummy.m */; };
+		A0CF4E641BA783AA63DD29D3DC1D9630 /* Pods-Parking PalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB31FA8CB10C6EDC032BAA4D2557B27 /* Pods-Parking PalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEC08C55D731C30229718522025ABC5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C20C35EC4F5E6B243D4B20AA9EFC34EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		EB947344396EDE83C59CD23E687A1584 /* Pods-Parking PalUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1365AF1E2E1A87EF2FB8479F934A8C /* Pods-Parking PalUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA64657AA1F86080220B92D53DE1348 /* Pods-Parking PalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E708B9B49FFA156EBA368A0D61E544AF /* Pods-Parking PalTests-dummy.m */; };
+		F14D072BD0514AEA255F1F6E0ED2A565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01805422091414DA37BC76B139B731A0 /* Pods-Parking Pal-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Parking Pal-frameworks.sh"; sourceTree = "<group>"; };
+		0551C0108A5BC35B3745AD1862D7FB19 /* Pods-Parking PalUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Parking PalUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0791D09035B5FEE9122E5D087BB66802 /* Pods-Parking PalUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Parking PalUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0E59D7F06DC9A5853DAB5F24175BF93C /* Pods_Parking_PalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Parking_PalUITests.framework; path = "Pods-Parking PalUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F5B8DF83B6734E5A04FF96B32C84C1 /* Pods-Parking Pal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Parking Pal-dummy.m"; sourceTree = "<group>"; };
+		1E7BC0DE67595F6D8309B2D13117F5C8 /* Pods-Parking PalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Parking PalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26C727322F32DF6FB75F65A0F1CAFAE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3660A02CFA4C71E7F2D41B133E157361 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36DB83CB4279B90D59054691B89501D1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		3B1365AF1E2E1A87EF2FB8479F934A8C /* Pods-Parking PalUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Parking PalUITests-umbrella.h"; sourceTree = "<group>"; };
+		475679C8B076306F7AC94A0E4D143D90 /* Pods-Parking Pal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Parking Pal-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A3CECE9D5FB7955B3CDC0D466370500 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		4CCD10E58E0F835D834C771BED4783C4 /* Pods-Parking Pal-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Parking Pal-resources.sh"; sourceTree = "<group>"; };
+		5274C049BEFBFA7178BD53069F6AB223 /* Pods_Parking_PalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Parking_PalTests.framework; path = "Pods-Parking PalTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		561155EC9B1F0BED26A5B811EA46A1BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6124A9CF66FE0B07386D55E51048B247 /* Pods-Parking PalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Parking PalTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		653EABD476B81312F723C2C441FCAC27 /* Pods-Parking PalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Parking PalUITests.modulemap"; sourceTree = "<group>"; };
+		77E9634FC77755C1FB98937AAD32A600 /* Pods-Parking PalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Parking PalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A3D5F3DA189066E9624AB295B944FBD /* Pods-Parking PalUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Parking PalUITests-resources.sh"; sourceTree = "<group>"; };
+		89028103D6F782C8AF91322C128A38CD /* Pods-Parking Pal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Parking Pal-umbrella.h"; sourceTree = "<group>"; };
+		8C8065F1546CCC26891A3BB90E994C14 /* Pods-Parking PalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Parking PalUITests-dummy.m"; sourceTree = "<group>"; };
+		91F6A62009272848F29B95E7C73EC867 /* Pods-Parking PalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parking PalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FB31FA8CB10C6EDC032BAA4D2557B27 /* Pods-Parking PalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Parking PalTests-umbrella.h"; sourceTree = "<group>"; };
+		AFAA38700E2BA810BA9014C22829F5E5 /* Pods-Parking Pal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parking Pal.debug.xcconfig"; sourceTree = "<group>"; };
+		BB2F912C3634A35EEBCA36437F1E9BC6 /* Pods-Parking PalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parking PalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4DB935D39AA11CB6A69A7B8CBA35C85 /* Pods-Parking PalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Parking PalTests.modulemap"; sourceTree = "<group>"; };
+		CA371A38B2EC911BF55C1A84AF566264 /* Pods-Parking Pal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Parking Pal-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D17D2C53EA13C42212ACDA104053E36A /* Pods-Parking PalTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Parking PalTests-frameworks.sh"; sourceTree = "<group>"; };
+		D25FC79855A6D6A5D0AF75BC4E6D88D3 /* Pods-Parking PalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parking PalTests.release.xcconfig"; sourceTree = "<group>"; };
+		E004374149D836C1256FFFCB38FECB72 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		E708B9B49FFA156EBA368A0D61E544AF /* Pods-Parking PalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Parking PalTests-dummy.m"; sourceTree = "<group>"; };
+		E94A868161F50A4F9A8A53B9B9F2DA40 /* Pods-Parking PalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parking PalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA998D359DA41CC3018CA9FA1C9F1A4B /* Pods-Parking Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parking Pal.release.xcconfig"; sourceTree = "<group>"; };
+		EFAA7379560E3F23C63DEBED00C39C75 /* Pods_Parking_Pal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Parking_Pal.framework; path = "Pods-Parking Pal.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F570654237E738A8038DCBB89ED7A66E /* Pods-Parking PalTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Parking PalTests-resources.sh"; sourceTree = "<group>"; };
+		F95DB7ACF73CF03040C57A3D42223A51 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FC5303F815F3635897FE9FC60A3533CE /* Pods-Parking Pal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Parking Pal.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26618D879CEEDB1E59BD25118E520869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC08C55D731C30229718522025ABC5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB362198BB0C2E614CFCD7CF5EBC01C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14D072BD0514AEA255F1F6E0ED2A565 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E6BBB07164F45A284572820C5A9037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20C35EC4F5E6B243D4B20AA9EFC34EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00AE499270EBEE5479D2200972EE3D1E /* Pods-Parking PalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				561155EC9B1F0BED26A5B811EA46A1BC /* Info.plist */,
+				653EABD476B81312F723C2C441FCAC27 /* Pods-Parking PalUITests.modulemap */,
+				77E9634FC77755C1FB98937AAD32A600 /* Pods-Parking PalUITests-acknowledgements.markdown */,
+				0791D09035B5FEE9122E5D087BB66802 /* Pods-Parking PalUITests-acknowledgements.plist */,
+				8C8065F1546CCC26891A3BB90E994C14 /* Pods-Parking PalUITests-dummy.m */,
+				0551C0108A5BC35B3745AD1862D7FB19 /* Pods-Parking PalUITests-frameworks.sh */,
+				7A3D5F3DA189066E9624AB295B944FBD /* Pods-Parking PalUITests-resources.sh */,
+				3B1365AF1E2E1A87EF2FB8479F934A8C /* Pods-Parking PalUITests-umbrella.h */,
+				E94A868161F50A4F9A8A53B9B9F2DA40 /* Pods-Parking PalUITests.debug.xcconfig */,
+				BB2F912C3634A35EEBCA36437F1E9BC6 /* Pods-Parking PalUITests.release.xcconfig */,
+			);
+			name = "Pods-Parking PalUITests";
+			path = "Target Support Files/Pods-Parking PalUITests";
+			sourceTree = "<group>";
+		};
+		1418B056D31B27EE2CEBA552B5ADFE56 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				501562BF592517FC6A65661FF1B35C78 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		243FAC914C81DCF02EFAD12598762AD5 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				1418B056D31B27EE2CEBA552B5ADFE56 /* Base */,
+				6BC99F081C91F80679CFA5DDC6213D57 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		501562BF592517FC6A65661FF1B35C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E004374149D836C1256FFFCB38FECB72 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243FAC914C81DCF02EFAD12598762AD5 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BC99F081C91F80679CFA5DDC6213D57 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E10253D9A6AF596CDA1C3BBE1F2FBFD6 /* Frameworks */,
+				7679C02ACA204A8841D527A6548CA23E /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		6EE884BFEDF06F371D34DA6612A29493 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95A0821AC053D68DF35CBF4B8791C6B /* Pods-Parking Pal */,
+				A3C861D01B1CBF0ACE04B356686E6105 /* Pods-Parking PalTests */,
+				00AE499270EBEE5479D2200972EE3D1E /* Pods-Parking PalUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7679C02ACA204A8841D527A6548CA23E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A3CECE9D5FB7955B3CDC0D466370500 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */,
+				EC14C41CEB02AAA3CC163EC8192BBCC1 /* Products */,
+				6EE884BFEDF06F371D34DA6612A29493 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A3C861D01B1CBF0ACE04B356686E6105 /* Pods-Parking PalTests */ = {
+			isa = PBXGroup;
+			children = (
+				3660A02CFA4C71E7F2D41B133E157361 /* Info.plist */,
+				C4DB935D39AA11CB6A69A7B8CBA35C85 /* Pods-Parking PalTests.modulemap */,
+				1E7BC0DE67595F6D8309B2D13117F5C8 /* Pods-Parking PalTests-acknowledgements.markdown */,
+				6124A9CF66FE0B07386D55E51048B247 /* Pods-Parking PalTests-acknowledgements.plist */,
+				E708B9B49FFA156EBA368A0D61E544AF /* Pods-Parking PalTests-dummy.m */,
+				D17D2C53EA13C42212ACDA104053E36A /* Pods-Parking PalTests-frameworks.sh */,
+				F570654237E738A8038DCBB89ED7A66E /* Pods-Parking PalTests-resources.sh */,
+				9FB31FA8CB10C6EDC032BAA4D2557B27 /* Pods-Parking PalTests-umbrella.h */,
+				91F6A62009272848F29B95E7C73EC867 /* Pods-Parking PalTests.debug.xcconfig */,
+				D25FC79855A6D6A5D0AF75BC4E6D88D3 /* Pods-Parking PalTests.release.xcconfig */,
+			);
+			name = "Pods-Parking PalTests";
+			path = "Target Support Files/Pods-Parking PalTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95A0821AC053D68DF35CBF4B8791C6B /* Pods-Parking Pal */ = {
+			isa = PBXGroup;
+			children = (
+				26C727322F32DF6FB75F65A0F1CAFAE5 /* Info.plist */,
+				FC5303F815F3635897FE9FC60A3533CE /* Pods-Parking Pal.modulemap */,
+				CA371A38B2EC911BF55C1A84AF566264 /* Pods-Parking Pal-acknowledgements.markdown */,
+				475679C8B076306F7AC94A0E4D143D90 /* Pods-Parking Pal-acknowledgements.plist */,
+				13F5B8DF83B6734E5A04FF96B32C84C1 /* Pods-Parking Pal-dummy.m */,
+				01805422091414DA37BC76B139B731A0 /* Pods-Parking Pal-frameworks.sh */,
+				4CCD10E58E0F835D834C771BED4783C4 /* Pods-Parking Pal-resources.sh */,
+				89028103D6F782C8AF91322C128A38CD /* Pods-Parking Pal-umbrella.h */,
+				AFAA38700E2BA810BA9014C22829F5E5 /* Pods-Parking Pal.debug.xcconfig */,
+				EA998D359DA41CC3018CA9FA1C9F1A4B /* Pods-Parking Pal.release.xcconfig */,
+			);
+			name = "Pods-Parking Pal";
+			path = "Target Support Files/Pods-Parking Pal";
+			sourceTree = "<group>";
+		};
+		E10253D9A6AF596CDA1C3BBE1F2FBFD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95DB7ACF73CF03040C57A3D42223A51 /* GoogleMaps.framework */,
+				36DB83CB4279B90D59054691B89501D1 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC14C41CEB02AAA3CC163EC8192BBCC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA7379560E3F23C63DEBED00C39C75 /* Pods_Parking_Pal.framework */,
+				5274C049BEFBFA7178BD53069F6AB223 /* Pods_Parking_PalTests.framework */,
+				0E59D7F06DC9A5853DAB5F24175BF93C /* Pods_Parking_PalUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47B17A9A2D67796277D0DBA2851E3721 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3C1D68FF76D4BE87530E47DAEAF253 /* Pods-Parking Pal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F557E9F895AE36A4D68A6DAE02D7B15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB947344396EDE83C59CD23E687A1584 /* Pods-Parking PalUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E06EE3009B82E2F5FC3D93211C9E12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CF4E641BA783AA63DD29D3DC1D9630 /* Pods-Parking PalTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		62BCC88CFCB1CF9D92511B1C815CBA09 /* Pods-Parking PalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BB32E45BBEA3C3A893DD71C827A91B /* Build configuration list for PBXNativeTarget "Pods-Parking PalUITests" */;
+			buildPhases = (
+				B3B9A42C57728DFE504B23E10C55EEC7 /* Sources */,
+				9AB362198BB0C2E614CFCD7CF5EBC01C /* Frameworks */,
+				7F557E9F895AE36A4D68A6DAE02D7B15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Parking PalUITests";
+			productName = "Pods-Parking PalUITests";
+			productReference = 0E59D7F06DC9A5853DAB5F24175BF93C /* Pods_Parking_PalUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89647E1D26DA5B7797DB3917E07B837B /* Pods-Parking Pal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ACB91D63A39C07B3D96AC00F5FB7F69 /* Build configuration list for PBXNativeTarget "Pods-Parking Pal" */;
+			buildPhases = (
+				121D858A1303C7E6EE778F5622B05692 /* Sources */,
+				26618D879CEEDB1E59BD25118E520869 /* Frameworks */,
+				47B17A9A2D67796277D0DBA2851E3721 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Parking Pal";
+			productName = "Pods-Parking Pal";
+			productReference = EFAA7379560E3F23C63DEBED00C39C75 /* Pods_Parking_Pal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFF642B3395D9D8FF217A14CC1B770B5 /* Pods-Parking PalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A202AC1F4E8EBEC9E4DC8C84BD2DD3 /* Build configuration list for PBXNativeTarget "Pods-Parking PalTests" */;
+			buildPhases = (
+				CEC034480D1ED8B9EB5199FBA149AC16 /* Sources */,
+				E2E6BBB07164F45A284572820C5A9037 /* Frameworks */,
+				B3E06EE3009B82E2F5FC3D93211C9E12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Parking PalTests";
+			productName = "Pods-Parking PalTests";
+			productReference = 5274C049BEFBFA7178BD53069F6AB223 /* Pods_Parking_PalTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EC14C41CEB02AAA3CC163EC8192BBCC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89647E1D26DA5B7797DB3917E07B837B /* Pods-Parking Pal */,
+				DFF642B3395D9D8FF217A14CC1B770B5 /* Pods-Parking PalTests */,
+				62BCC88CFCB1CF9D92511B1C815CBA09 /* Pods-Parking PalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		121D858A1303C7E6EE778F5622B05692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2126D9C5AFA2B04710FBDFF68D6C0088 /* Pods-Parking Pal-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B9A42C57728DFE504B23E10C55EEC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93968F3DB6A55AC6AC802C0C5175E2A1 /* Pods-Parking PalUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC034480D1ED8B9EB5199FBA149AC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA64657AA1F86080220B92D53DE1348 /* Pods-Parking PalTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B5045C1C2FEC186A78DC827C052C5B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAA38700E2BA810BA9014C22829F5E5 /* Pods-Parking Pal.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Parking Pal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Parking Pal/Pods-Parking Pal.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Parking_Pal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		547197917B86E691AF86EA26FAF0BD2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F6A62009272848F29B95E7C73EC867 /* Pods-Parking PalTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Parking PalTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Parking_PalTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AAECD5914795988C3199F04618DAFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2F912C3634A35EEBCA36437F1E9BC6 /* Pods-Parking PalUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Parking PalUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Parking_PalUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89031B532E649E1D483F86E0DDB25763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94A868161F50A4F9A8A53B9B9F2DA40 /* Pods-Parking PalUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Parking PalUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Parking_PalUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACF5FC5BF76B85EB56FC62CB537403F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA998D359DA41CC3018CA9FA1C9F1A4B /* Pods-Parking Pal.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Parking Pal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Parking Pal/Pods-Parking Pal.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Parking_Pal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C645AE70A783BEE5FB6505F17812331B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25FC79855A6D6A5D0AF75BC4E6D88D3 /* Pods-Parking PalTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Parking PalTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Parking_PalTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26A202AC1F4E8EBEC9E4DC8C84BD2DD3 /* Build configuration list for PBXNativeTarget "Pods-Parking PalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547197917B86E691AF86EA26FAF0BD2E /* Debug */,
+				C645AE70A783BEE5FB6505F17812331B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ACB91D63A39C07B3D96AC00F5FB7F69 /* Build configuration list for PBXNativeTarget "Pods-Parking Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5045C1C2FEC186A78DC827C052C5B5 /* Debug */,
+				ACF5FC5BF76B85EB56FC62CB537403F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BB32E45BBEA3C3A893DD71C827A91B /* Build configuration list for PBXNativeTarget "Pods-Parking PalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89031B532E649E1D483F86E0DDB25763 /* Debug */,
+				7AAECD5914795988C3199F04618DAFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

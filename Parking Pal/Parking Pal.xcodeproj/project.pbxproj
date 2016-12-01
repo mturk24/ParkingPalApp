@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57FE50561DEFA52200ACC4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50551DEFA52200ACC4A3 /* AppDelegate.swift */; };
+		57FE50581DEFA52200ACC4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50571DEFA52200ACC4A3 /* ViewController.swift */; };
+		57FE505B1DEFA52200ACC4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FE50591DEFA52200ACC4A3 /* Main.storyboard */; };
+		57FE505E1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57FE505C1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld */; };
+		57FE50601DEFA52200ACC4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FE505F1DEFA52200ACC4A3 /* Assets.xcassets */; };
+		57FE50631DEFA52200ACC4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FE50611DEFA52200ACC4A3 /* LaunchScreen.storyboard */; };
+		57FE506E1DEFA52200ACC4A3 /* Parking_PalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE506D1DEFA52200ACC4A3 /* Parking_PalTests.swift */; };
+		57FE50791DEFA52200ACC4A3 /* Parking_PalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50781DEFA52200ACC4A3 /* Parking_PalUITests.swift */; };
+		57FE50871DEFA87800ACC4A3 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50861DEFA87800ACC4A3 /* MapsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57FE506A1DEFA52200ACC4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57FE504A1DEFA52200ACC4A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57FE50511DEFA52200ACC4A3;
+			remoteInfo = "Parking Pal";
+		};
+		57FE50751DEFA52200ACC4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57FE504A1DEFA52200ACC4A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57FE50511DEFA52200ACC4A3;
+			remoteInfo = "Parking Pal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37A06A552E3ACB41ED871099 /* Pods-Parking PalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57FE50521DEFA52200ACC4A3 /* Parking Pal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Pal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FE50551DEFA52200ACC4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57FE50571DEFA52200ACC4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57FE505A1DEFA52200ACC4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57FE505D1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parking_Pal.xcdatamodel; sourceTree = "<group>"; };
+		57FE505F1DEFA52200ACC4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57FE50621DEFA52200ACC4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57FE50641DEFA52200ACC4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FE50691DEFA52200ACC4A3 /* Parking PalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parking PalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FE506D1DEFA52200ACC4A3 /* Parking_PalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_PalTests.swift; sourceTree = "<group>"; };
+		57FE506F1DEFA52200ACC4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FE50741DEFA52200ACC4A3 /* Parking PalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parking PalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FE50781DEFA52200ACC4A3 /* Parking_PalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_PalUITests.swift; sourceTree = "<group>"; };
+		57FE507A1DEFA52200ACC4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FE50861DEFA87800ACC4A3 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		6E8AD9AA5D7F3DEF80500DBD /* Pods-Parking Pal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Pal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal.debug.xcconfig"; sourceTree = "<group>"; };
+		772B577223B266757B8826D3 /* Pods-Parking PalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B73590A7F0423B48C8A15BC /* Pods-Parking PalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3E4D1EE278B10BFDFB29E54 /* Pods-Parking PalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests.release.xcconfig"; sourceTree = "<group>"; };
+		F531841F5672BE4C7E43E304 /* Pods-Parking Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Pal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57FE504F1DEFA52200ACC4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FE50661DEFA52200ACC4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FE50711DEFA52200ACC4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53A4803A249EDD6EA3807610 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E8AD9AA5D7F3DEF80500DBD /* Pods-Parking Pal.debug.xcconfig */,
+				F531841F5672BE4C7E43E304 /* Pods-Parking Pal.release.xcconfig */,
+				37A06A552E3ACB41ED871099 /* Pods-Parking PalTests.debug.xcconfig */,
+				F3E4D1EE278B10BFDFB29E54 /* Pods-Parking PalTests.release.xcconfig */,
+				772B577223B266757B8826D3 /* Pods-Parking PalUITests.debug.xcconfig */,
+				9B73590A7F0423B48C8A15BC /* Pods-Parking PalUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57FE50491DEFA52200ACC4A3 = {
+			isa = PBXGroup;
+			children = (
+				57FE50541DEFA52200ACC4A3 /* Parking Pal */,
+				57FE506C1DEFA52200ACC4A3 /* Parking PalTests */,
+				57FE50771DEFA52200ACC4A3 /* Parking PalUITests */,
+				57FE50531DEFA52200ACC4A3 /* Products */,
+				53A4803A249EDD6EA3807610 /* Pods */,
+				DDF4287FB07F76D0358A0E08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57FE50531DEFA52200ACC4A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57FE50521DEFA52200ACC4A3 /* Parking Pal.app */,
+				57FE50691DEFA52200ACC4A3 /* Parking PalTests.xctest */,
+				57FE50741DEFA52200ACC4A3 /* Parking PalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57FE50541DEFA52200ACC4A3 /* Parking Pal */ = {
+			isa = PBXGroup;
+			children = (
+				57FE50551DEFA52200ACC4A3 /* AppDelegate.swift */,
+				57FE50571DEFA52200ACC4A3 /* ViewController.swift */,
+				57FE50861DEFA87800ACC4A3 /* MapsViewController.swift */,
+				57FE50591DEFA52200ACC4A3 /* Main.storyboard */,
+				57FE505F1DEFA52200ACC4A3 /* Assets.xcassets */,
+				57FE50611DEFA52200ACC4A3 /* LaunchScreen.storyboard */,
+				57FE50641DEFA52200ACC4A3 /* Info.plist */,
+				57FE505C1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld */,
+			);
+			path = "Parking Pal";
+			sourceTree = "<group>";
+		};
+		57FE506C1DEFA52200ACC4A3 /* Parking PalTests */ = {
+			isa = PBXGroup;
+			children = (
+				57FE506D1DEFA52200ACC4A3 /* Parking_PalTests.swift */,
+				57FE506F1DEFA52200ACC4A3 /* Info.plist */,
+			);
+			path = "Parking PalTests";
+			sourceTree = "<group>";
+		};
+		57FE50771DEFA52200ACC4A3 /* Parking PalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57FE50781DEFA52200ACC4A3 /* Parking_PalUITests.swift */,
+				57FE507A1DEFA52200ACC4A3 /* Info.plist */,
+			);
+			path = "Parking PalUITests";
+			sourceTree = "<group>";
+		};
+		DDF4287FB07F76D0358A0E08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57FE50511DEFA52200ACC4A3 /* Parking Pal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FE507D1DEFA52200ACC4A3 /* Build configuration list for PBXNativeTarget "Parking Pal" */;
+			buildPhases = (
+				13FD7C965B7045050A65E6E3 /* [CP] Check Pods Manifest.lock */,
+				57FE504E1DEFA52200ACC4A3 /* Sources */,
+				57FE504F1DEFA52200ACC4A3 /* Frameworks */,
+				57FE50501DEFA52200ACC4A3 /* Resources */,
+				AB5AA95914A8399800886B41 /* [CP] Embed Pods Frameworks */,
+				19BEA0BDF8B40979C9944849 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Parking Pal";
+			productName = "Parking Pal";
+			productReference = 57FE50521DEFA52200ACC4A3 /* Parking Pal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57FE50681DEFA52200ACC4A3 /* Parking PalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FE50801DEFA52200ACC4A3 /* Build configuration list for PBXNativeTarget "Parking PalTests" */;
+			buildPhases = (
+				4D66AF88AD61EFBCBA875956 /* [CP] Check Pods Manifest.lock */,
+				57FE50651DEFA52200ACC4A3 /* Sources */,
+				57FE50661DEFA52200ACC4A3 /* Frameworks */,
+				57FE50671DEFA52200ACC4A3 /* Resources */,
+				D45336BB35A85E2D6FD70DA4 /* [CP] Embed Pods Frameworks */,
+				99826F9E28D8D8469FFCABD3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57FE506B1DEFA52200ACC4A3 /* PBXTargetDependency */,
+			);
+			name = "Parking PalTests";
+			productName = "Parking PalTests";
+			productReference = 57FE50691DEFA52200ACC4A3 /* Parking PalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57FE50731DEFA52200ACC4A3 /* Parking PalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FE50831DEFA52200ACC4A3 /* Build configuration list for PBXNativeTarget "Parking PalUITests" */;
+			buildPhases = (
+				700947B7517AA96B70738F63 /* [CP] Check Pods Manifest.lock */,
+				57FE50701DEFA52200ACC4A3 /* Sources */,
+				57FE50711DEFA52200ACC4A3 /* Frameworks */,
+				57FE50721DEFA52200ACC4A3 /* Resources */,
+				B7ED10F3EE9AD262F6F01544 /* [CP] Embed Pods Frameworks */,
+				D71081B6BE33381EF7E9C00B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57FE50761DEFA52200ACC4A3 /* PBXTargetDependency */,
+			);
+			name = "Parking PalUITests";
+			productName = "Parking PalUITests";
+			productReference = 57FE50741DEFA52200ACC4A3 /* Parking PalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57FE504A1DEFA52200ACC4A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Allen Wang";
+				TargetAttributes = {
+					57FE50511DEFA52200ACC4A3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 63K6Z46U72;
+						ProvisioningStyle = Automatic;
+					};
+					57FE50681DEFA52200ACC4A3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 63K6Z46U72;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 57FE50511DEFA52200ACC4A3;
+					};
+					57FE50731DEFA52200ACC4A3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 63K6Z46U72;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 57FE50511DEFA52200ACC4A3;
+					};
+				};
+			};
+			buildConfigurationList = 57FE504D1DEFA52200ACC4A3 /* Build configuration list for PBXProject "Parking Pal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57FE50491DEFA52200ACC4A3;
+			productRefGroup = 57FE50531DEFA52200ACC4A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57FE50511DEFA52200ACC4A3 /* Parking Pal */,
+				57FE50681DEFA52200ACC4A3 /* Parking PalTests */,
+				57FE50731DEFA52200ACC4A3 /* Parking PalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57FE50501DEFA52200ACC4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FE50631DEFA52200ACC4A3 /* LaunchScreen.storyboard in Resources */,
+				57FE50601DEFA52200ACC4A3 /* Assets.xcassets in Resources */,
+				57FE505B1DEFA52200ACC4A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FE50671DEFA52200ACC4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FE50721DEFA52200ACC4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13FD7C965B7045050A65E6E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19BEA0BDF8B40979C9944849 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D66AF88AD61EFBCBA875956 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		700947B7517AA96B70738F63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99826F9E28D8D8469FFCABD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5AA95914A8399800886B41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7ED10F3EE9AD262F6F01544 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45336BB35A85E2D6FD70DA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71081B6BE33381EF7E9C00B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57FE504E1DEFA52200ACC4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FE505E1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld in Sources */,
+				57FE50581DEFA52200ACC4A3 /* ViewController.swift in Sources */,
+				57FE50561DEFA52200ACC4A3 /* AppDelegate.swift in Sources */,
+				57FE50871DEFA87800ACC4A3 /* MapsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FE50651DEFA52200ACC4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FE506E1DEFA52200ACC4A3 /* Parking_PalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FE50701DEFA52200ACC4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FE50791DEFA52200ACC4A3 /* Parking_PalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57FE506B1DEFA52200ACC4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57FE50511DEFA52200ACC4A3 /* Parking Pal */;
+			targetProxy = 57FE506A1DEFA52200ACC4A3 /* PBXContainerItemProxy */;
+		};
+		57FE50761DEFA52200ACC4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57FE50511DEFA52200ACC4A3 /* Parking Pal */;
+			targetProxy = 57FE50751DEFA52200ACC4A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57FE50591DEFA52200ACC4A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57FE505A1DEFA52200ACC4A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57FE50611DEFA52200ACC4A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57FE50621DEFA52200ACC4A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57FE507B1DEFA52200ACC4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57FE507C1DEFA52200ACC4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57FE507E1DEFA52200ACC4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8AD9AA5D7F3DEF80500DBD /* Pods-Parking Pal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 63K6Z46U72;
+				INFOPLIST_FILE = "Parking Pal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-Pal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		57FE507F1DEFA52200ACC4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F531841F5672BE4C7E43E304 /* Pods-Parking Pal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 63K6Z46U72;
+				INFOPLIST_FILE = "Parking Pal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-Pal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		57FE50811DEFA52200ACC4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A06A552E3ACB41ED871099 /* Pods-Parking PalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 63K6Z46U72;
+				INFOPLIST_FILE = "Parking PalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-PalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parking Pal.app/Parking Pal";
+			};
+			name = Debug;
+		};
+		57FE50821DEFA52200ACC4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E4D1EE278B10BFDFB29E54 /* Pods-Parking PalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 63K6Z46U72;
+				INFOPLIST_FILE = "Parking PalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-PalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parking Pal.app/Parking Pal";
+			};
+			name = Release;
+		};
+		57FE50841DEFA52200ACC4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772B577223B266757B8826D3 /* Pods-Parking PalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 63K6Z46U72;
+				INFOPLIST_FILE = "Parking PalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-PalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Parking Pal";
+			};
+			name = Debug;
+		};
+		57FE50851DEFA52200ACC4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B73590A7F0423B48C8A15BC /* Pods-Parking PalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 63K6Z46U72;
+				INFOPLIST_FILE = "Parking PalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-PalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Parking Pal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57FE504D1DEFA52200ACC4A3 /* Build configuration list for PBXProject "Parking Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FE507B1DEFA52200ACC4A3 /* Debug */,
+				57FE507C1DEFA52200ACC4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57FE507D1DEFA52200ACC4A3 /* Build configuration list for PBXNativeTarget "Parking Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FE507E1DEFA52200ACC4A3 /* Debug */,
+				57FE507F1DEFA52200ACC4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57FE50801DEFA52200ACC4A3 /* Build configuration list for PBXNativeTarget "Parking PalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FE50811DEFA52200ACC4A3 /* Debug */,
+				57FE50821DEFA52200ACC4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57FE50831DEFA52200ACC4A3 /* Build configuration list for PBXNativeTarget "Parking PalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FE50841DEFA52200ACC4A3 /* Debug */,
+				57FE50851DEFA52200ACC4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57FE505C1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57FE505D1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodel */,
+			);
+			currentVersion = 57FE505D1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodel */;
+			path = Parking_Pal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 57FE504A1DEFA52200ACC4A3 /* Project object */;
+}
