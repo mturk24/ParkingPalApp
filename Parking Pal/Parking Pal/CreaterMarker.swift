@@ -1,17 +1,25 @@
 //
-//  MapsViewController.swift
+//  CreaterMarker.swift
 //  Parking Pal
 //
-//  Created by Allen Wang on 11/30/16.
+//  Created by Matthew Turk on 12/7/16.
 //  Copyright © 2016 Allen Wang. All rights reserved.
 //
+
+import Foundation
 import UIKit
 import GoogleMaps
 
-class MapsViewController: UIViewController {
+class CreaterMarker: UIViewController {
+    
+    
     
     override func loadView() {
         var markers = [GMSMarker]()
+        var xCoord: UITextView
+        var yCoord: UITextView
+        var sendButton: UIButton
+        
         let camera = GMSCameraPosition.camera(withLatitude: 41.887,
                                               longitude:-87.622,
                                               zoom:15)

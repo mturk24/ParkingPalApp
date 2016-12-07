@@ -16,6 +16,7 @@
 		57FE506E1DEFA52200ACC4A3 /* Parking_PalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE506D1DEFA52200ACC4A3 /* Parking_PalTests.swift */; };
 		57FE50791DEFA52200ACC4A3 /* Parking_PalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50781DEFA52200ACC4A3 /* Parking_PalUITests.swift */; };
 		57FE50871DEFA87800ACC4A3 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50861DEFA87800ACC4A3 /* MapsViewController.swift */; };
+		B21BE1FF1DF80FBD00E62BE2 /* CreaterMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE1FE1DF80FBD00E62BE2 /* CreaterMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		6E8AD9AA5D7F3DEF80500DBD /* Pods-Parking Pal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Pal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal.debug.xcconfig"; sourceTree = "<group>"; };
 		772B577223B266757B8826D3 /* Pods-Parking PalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B73590A7F0423B48C8A15BC /* Pods-Parking PalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B21BE1FE1DF80FBD00E62BE2 /* CreaterMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaterMarker.swift; sourceTree = "<group>"; };
 		F3E4D1EE278B10BFDFB29E54 /* Pods-Parking PalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F531841F5672BE4C7E43E304 /* Pods-Parking Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Pal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				57FE50611DEFA52200ACC4A3 /* LaunchScreen.storyboard */,
 				57FE50641DEFA52200ACC4A3 /* Info.plist */,
 				57FE505C1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld */,
+				B21BE1FE1DF80FBD00E62BE2 /* CreaterMarker.swift */,
 			);
 			path = "Parking Pal";
 			sourceTree = "<group>";
@@ -236,7 +239,6 @@
 				TargetAttributes = {
 					57FE50511DEFA52200ACC4A3 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 63K6Z46U72;
 						ProvisioningStyle = Automatic;
 					};
 					57FE50681DEFA52200ACC4A3 = {
@@ -443,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21BE1FF1DF80FBD00E62BE2 /* CreaterMarker.swift in Sources */,
 				57FE505E1DEFA52200ACC4A3 /* Parking_Pal.xcdatamodeld in Sources */,
 				57FE50581DEFA52200ACC4A3 /* ViewController.swift in Sources */,
 				57FE50561DEFA52200ACC4A3 /* AppDelegate.swift in Sources */,
@@ -541,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -585,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -599,8 +602,9 @@
 			baseConfigurationReference = 6E8AD9AA5D7F3DEF80500DBD /* Pods-Parking Pal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 63K6Z46U72;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Parking Pal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-Pal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,8 +617,9 @@
 			baseConfigurationReference = F531841F5672BE4C7E43E304 /* Pods-Parking Pal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 63K6Z46U72;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Parking Pal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "UCB.Parking-Pal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
