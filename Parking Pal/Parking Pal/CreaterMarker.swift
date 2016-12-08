@@ -10,8 +10,9 @@ import Foundation
 import UIKit
 import GoogleMaps
 import MapKit
+import CoreLocation
 
-class CreaterMarker: UIViewController, MKMapViewDelegate {
+class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var delegate = UIApplication.shared.delegate as! AppDelegate //non-optional variable
     
@@ -59,19 +60,33 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
     
     // MARK: - location manager to authorize user location for Maps app
     var locationManager = CLLocationManager()
-    func checkLocationAuthorizationStatus() {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-        }
+    
+    
+    @IBAction func callSend(_ sender: AnyObject) {
+        let myLocation = CLLocationCoordinate2DMake(Double(latBox.text!)!, Double(longBox.text!)!)
+        // Drop a pin
+        let dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+        mapView.addAnnotation(dropPin)
+        let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
+        centerMapOnLocation(location: initialLocation)
+    }
+    
+    
+    @IBAction func clearFunc(_ sender: AnyObject) {
+            for _annotation in self.mapView.annotations {
+                if let annotation = _annotation as? MKAnnotation
+                {
+                    self.mapView.removeAnnotation(annotation)
+                }
+            }
+        
     }
     
 
     @IBAction func callFunc(_ sender: AnyObject) {
         let myLocation = CLLocationCoordinate2DMake(37.87576, -122.25735)
         // Drop a pin
-        let dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Upper Hearst", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+        let dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Parking Lot", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
         mapView.addAnnotation(dropPin)
         let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
         centerMapOnLocation(location: initialLocation)
@@ -83,6 +98,26 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
 //        
 //    }
     
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var locValue:CLLocationCoordinate2D = (manager.location?.coordinate)!
+        let center = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        var currentLocation = CLLocation()
+        var currentLong = currentLocation.coordinate.longitude;
+        var currentLat = currentLocation.coordinate.latitude;
+        
+        self.mapView.setRegion(region, animated: true)
+        //        checkLocationAuthorizationStatus()
+        
+        
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        print("Error while updating location " + error.localizedDescription)
+    }
+    
+    
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -90,6 +125,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     var markers = [GMSMarker]()
     @IBOutlet weak var latBox: UITextField!
@@ -98,17 +134,31 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var currentLocButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.requestAlwaysAuthorization()
+            locationManager.startUpdatingLocation()
+            
+        }
+        
         self.mapView.delegate = self
-        let position = CLLocation(latitude: 37.8756, longitude: -122.2588)
-        checkLocationAuthorizationStatus()
+       
+//        let mainLocation = CLLocationCoordinate2DMake(37.8756, -122.2588)
+//        // Drop a pin
+//        let dropPin = MKPointAnnotation()
+//        dropPin.coordinate = mainLocation
+//        dropPin.title = "Soda Hall"
+//        mapView.addAnnotation(dropPin)
+        let position = CLLocation(latitude: 37.87576, longitude: -122.25735)
         centerMapOnLocation(location: position)
-        let mainLocation = CLLocationCoordinate2DMake(37.8756, -122.2588)
-        // Drop a pin
-        let dropPin = MKPointAnnotation()
-        dropPin.coordinate = mainLocation
-        dropPin.title = "Soda Hall"
-        mapView.addAnnotation(dropPin)
         currentLocButton.addTarget(self, action: "callFunc:", for: .touchUpInside)
+        sendButton.addTarget(self, action: "callSend:", for: .touchUpInside)
+        clearButton.addTarget(self, action: "clearFunc:", for: .touchUpInside)
     }
     
     override func didReceiveMemoryWarning() {

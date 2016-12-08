@@ -89,6 +89,9 @@
                                 <frame key="frameInset" minX="135" minY="550" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="callSend:" destination="cU8-pc-BDa" eventType="touchUpInside" id="shT-Cm-dbU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-Ge-HqP">
                                 <frame key="frameInset" minX="114" minY="596" width="146" height="30"/>
@@ -109,10 +112,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-vV-gAd">
+                                <frame key="frameInset" minX="309" minY="85" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearFun:" destination="cU8-pc-BDa" eventType="touchUpInside" id="mwb-YL-mLw"/>
+                                    <action selector="clearFunc:" destination="cU8-pc-BDa" eventType="touchUpInside" id="bnM-zR-yHW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="clearButton" destination="Q4r-vV-gAd" id="SLD-jx-pZk"/>
                         <outlet property="currentLocButton" destination="IlZ-Ge-HqP" id="TYq-fM-qaB"/>
                         <outlet property="latBox" destination="kjq-eW-Z4j" id="MEm-fR-yWD"/>
                         <outlet property="longBox" destination="Xvz-SR-EsP" id="1hX-AM-SgM"/>
@@ -209,7 +222,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MHu-aQ-Wja" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wGj-rv-PJC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wGj-rv-PJC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
