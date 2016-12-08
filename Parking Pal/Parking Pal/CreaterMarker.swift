@@ -65,8 +65,11 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     @IBAction func callSend(_ sender: AnyObject) {
         
         var myLocation:CLLocationCoordinate2D
+        var dropPin:CustomAnnotation
         let alert = UIAlertController(title: "Alert", message: "You need to specify a location", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+        let alert2 = UIAlertController(title: "Alert", message: "You need to specify a price", preferredStyle: UIAlertControllerStyle.alert)
+        alert2.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
         
         
             
@@ -76,8 +79,15 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
             } else {
                 myLocation = CLLocationCoordinate2DMake(Double(latBox.text!)!, Double(longBox.text!)!)
                 // Drop a pin
-                let dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
-                mapView.addAnnotation(dropPin)
+                if (setPriceBox.text!.isEmpty) {
+                    self.present(alert2, animated: true, completion: nil)
+                } else {
+                    let changeText:String = setPriceBox.text!
+                    dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot, Price: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+                    mapView.addAnnotation(dropPin)
+                }
+                
+                
                 let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
                 centerMapOnLocation(location: initialLocation)
                
@@ -99,10 +109,25 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     
 
     @IBAction func callFunc(_ sender: AnyObject) {
+        var dropPin:CustomAnnotation
         let myLocation = CLLocationCoordinate2DMake(37.87576, -122.25735)
+        let alert2 = UIAlertController(title: "Alert", message: "You need to specify a price", preferredStyle: UIAlertControllerStyle.alert)
+        alert2.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+        
+        if (setPriceBox.text!.isEmpty) {
+            self.present(alert2, animated: true, completion: nil)
+        } else {
+            let changeText:String = setPriceBox.text!
+            dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Parking Lot, Price: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+            mapView.addAnnotation(dropPin)
+        }
+        
         // Drop a pin
-        let dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Parking Lot", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
-        mapView.addAnnotation(dropPin)
+        
+        
+        
+//        let dropPin = CustomAnnotation(coordinate: myLocation, title: "", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+//        mapView.addAnnotation(dropPin)
         let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
         centerMapOnLocation(location: initialLocation)
     }
@@ -142,6 +167,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+    @IBOutlet weak var setPriceBox: UITextField!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     var markers = [GMSMarker]()
@@ -176,6 +202,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         currentLocButton.addTarget(self, action: "callFunc:", for: .touchUpInside)
         sendButton.addTarget(self, action: "callSend:", for: .touchUpInside)
         clearButton.addTarget(self, action: "clearFunc:", for: .touchUpInside)
+        
     }
     
     override func didReceiveMemoryWarning() {
