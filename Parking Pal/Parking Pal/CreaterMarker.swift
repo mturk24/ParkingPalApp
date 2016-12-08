@@ -63,24 +63,39 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     
     
     @IBAction func callSend(_ sender: AnyObject) {
-        let myLocation = CLLocationCoordinate2DMake(Double(latBox.text!)!, Double(longBox.text!)!)
-        // Drop a pin
-        let dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
-        mapView.addAnnotation(dropPin)
-        let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
-        centerMapOnLocation(location: initialLocation)
-    }
-    
-    
-    @IBAction func clearFunc(_ sender: AnyObject) {
-            for _annotation in self.mapView.annotations {
-                if let annotation = _annotation as? MKAnnotation
-                {
-                    self.mapView.removeAnnotation(annotation)
-                }
+        
+        var myLocation:CLLocationCoordinate2D
+        let alert = UIAlertController(title: "Alert", message: "You need to specify a location", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+        
+        
+            
+            if (latBox.text!.isEmpty || longBox.text!.isEmpty) {
+                self.present(alert, animated: true, completion: nil)
+                
+            } else {
+                myLocation = CLLocationCoordinate2DMake(Double(latBox.text!)!, Double(longBox.text!)!)
+                // Drop a pin
+                let dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+                mapView.addAnnotation(dropPin)
+                let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
+                centerMapOnLocation(location: initialLocation)
+               
             }
         
     }
+    
+    @IBAction func clearFunc(_ sender: AnyObject) {
+        for _annotation in self.mapView.annotations {
+            if let annotation = _annotation as? MKAnnotation
+            {
+                self.mapView.removeAnnotation(annotation)
+            }
+        }
+    }
+    
+    
+    
     
 
     @IBAction func callFunc(_ sender: AnyObject) {
@@ -106,6 +121,8 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         var currentLocation = CLLocation()
         var currentLong = currentLocation.coordinate.longitude;
         var currentLat = currentLocation.coordinate.latitude;
+        print(currentLat, "This is lat")
+        print(currentLong, "This long")
         
         self.mapView.setRegion(region, animated: true)
         //        checkLocationAuthorizationStatus()

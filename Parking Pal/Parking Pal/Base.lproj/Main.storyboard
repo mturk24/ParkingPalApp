@@ -117,8 +117,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
-                                    <action selector="clearFun:" destination="cU8-pc-BDa" eventType="touchUpInside" id="mwb-YL-mLw"/>
-                                    <action selector="clearFunc:" destination="cU8-pc-BDa" eventType="touchUpInside" id="bnM-zR-yHW"/>
+                                    <action selector="clearFunc:" destination="cU8-pc-BDa" eventType="touchUpInside" id="yTL-F1-iYb"/>
                                 </connections>
                             </button>
                         </subviews>
