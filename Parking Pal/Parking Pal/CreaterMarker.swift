@@ -9,24 +9,122 @@
 import Foundation
 import UIKit
 import GoogleMaps
+import MapKit
 
-class CreaterMarker: UIViewController {
+class CreaterMarker: UIViewController, MKMapViewDelegate {
     
-    
-    
-    override func loadView() {
-        var markers = [GMSMarker]()
-        var xCoord: UITextView
-        var yCoord: UITextView
-        var sendButton: UIButton
+    func addBounceAnimationToView(view: UIView)
+    {
+        let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale") as CAKeyframeAnimation
+        bounceAnimation.values = [ 0.05, 1.1, 0.9, 1]
         
-        let camera = GMSCameraPosition.camera(withLatitude: 37.8716,
-                                              longitude:122.2727,
-                                              zoom:15)
-        let mapView = GMSMapView.map(withFrame: .zero, camera:camera)
-        mapView.isMyLocationEnabled = true
-        self.view = mapView
+        let timingFunctions = NSMutableArray(capacity: bounceAnimation.values!.count)
         
+        for i in 0 ..< bounceAnimation.values!.count {
+            timingFunctions.add(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
+        }
+        bounceAnimation.timingFunctions = timingFunctions as NSArray as? [CAMediaTimingFunction]
+        bounceAnimation.isRemovedOnCompletion = false
+        
+        view.layer.add(bounceAnimation, forKey: "bounce")
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if (annotation is MKUserLocation) {
+            return nil
+        }
+        
+        if (annotation.isKind(of: CustomAnnotation.self)) {
+            let customAnnotation = annotation as? CustomAnnotation
+            mapView.translatesAutoresizingMaskIntoConstraints = false
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "CustomAnnotation") as MKAnnotationView!
+            
+            if (annotationView == nil) {
+                annotationView = customAnnotation?.annotationView()
+            } else {
+                annotationView?.annotation = annotation;
+            }
+            
+            self.addBounceAnimationToView(view: annotationView!)
+            return annotationView
+        } else {
+            return nil
+        }
+    }
+    
+    // MARK: - location manager to authorize user location for Maps app
+    var locationManager = CLLocationManager()
+    func checkLocationAuthorizationStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+
+    func showCustomAnnotationWithButton()
+    {
+        
+        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
+        // Drop a pin
+        let dropPin = CustomAnnotation(coordinate: newYorkLocation, title: "New York", subtitle: "New York Subtitle", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+        mapView.addAnnotation(dropPin)
+        let initialLocation = CLLocation(latitude: newYorkLocation.latitude, longitude: newYorkLocation.longitude)
+        centerMapOnLocation(location: initialLocation)
+        
+    }
+    
+    let regionRadius: CLLocationDistance = 1000
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.mapView.delegate = self
+        let position = CLLocation(latitude: 37.8686, longitude: -122.2631)
+        checkLocationAuthorizationStatus()
+        centerMapOnLocation(location: position)
+        let rsfLocation = CLLocationCoordinate2DMake(37.8686, -122.2631)
+        // Drop a pin
+        let dropPin = MKPointAnnotation()
+        dropPin.coordinate = rsfLocation
+        dropPin.title = "Berkeley RSF"
+        mapView.addAnnotation(dropPin)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+    
+    
+//    override func loadView() {
+//        var markers = [GMSMarker]()
+//        var xCoord: UITextView
+//        var yCoord: UITextView
+//        var sendButton: UIButton
+        
+//        let camera = GMSCameraPosition.camera(withLatitude: 37.8716,
+//                                              longitude:-122.2727,
+//                                              zoom:15)
+    
+//        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+//        let mapView = GMSMapView(frame: self.view.bounds)
+//        let marker = GMSMarker(position: position)
+//        marker.title = "Berkeley"
+//        marker.map = mapView
+//        mapView.isMyLocationEnabled = true
+//        mapView.settings.compassButton = true
+//        mapView.settings.myLocationButton = true
+//        self.view = mapView
+//        
 //        let marker = GMSMarker()
 //        marker.position = CLLocationCoordinate2D(latitude: 36.8684, longitude: 122.2636)
 //        marker.appearAnimation = kGMSMarkerAnimationPop
@@ -52,5 +150,52 @@ class CreaterMarker: UIViewController {
 //        marker3.snippet = "Percent Full: 30%\nPrice: $15/hr"
         
         
+//    }
+}
+class CustomAnnotation : NSObject, MKAnnotation {
+    
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    var subtitle: String?
+    var detailURL: NSURL
+    var enableInfoButton : Bool
+    
+    init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, detailURL: NSURL, enableInfoButton : Bool) {
+        self.coordinate = coordinate
+        self.title = title
+        self.subtitle = subtitle
+        self.detailURL = detailURL
+        self.enableInfoButton = enableInfoButton;
     }
+    
+    
+    
+    func annotationView() -> MKAnnotationView {
+        let view = MKAnnotationView(annotation: self, reuseIdentifier: "CustomAnnotation")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.isEnabled = true
+        view.canShowCallout = true
+        view.image = UIImage(named: "flag_marker")
+        view.rightCalloutAccessoryView = UIButton(type: UIButtonType.custom)
+//        view.centerOffset = CGPointMake(0, -32)
+        
+        if(self.enableInfoButton){
+            let deleteButton = UIButton(type: UIButtonType.system) as UIButton
+            deleteButton.frame.size.width = 35
+            deleteButton.frame.size.height = 35
+            deleteButton.backgroundColor = UIColor.white
+            deleteButton.setImage(UIImage(named: "info"), for: .normal)
+            deleteButton.addTarget(self, action: Selector("infoClicked:"), for: .touchUpInside)
+            
+            view.leftCalloutAccessoryView = deleteButton
+        }
+        return view
+    }
+    
+    func infoClicked(sender: AnyObject?) {
+        
+        print("infoClicked")
+        
+    }
+    
 }

@@ -17,6 +17,7 @@
 		57FE50791DEFA52200ACC4A3 /* Parking_PalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50781DEFA52200ACC4A3 /* Parking_PalUITests.swift */; };
 		57FE50871DEFA87800ACC4A3 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE50861DEFA87800ACC4A3 /* MapsViewController.swift */; };
 		B21BE1FF1DF80FBD00E62BE2 /* CreaterMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE1FE1DF80FBD00E62BE2 /* CreaterMarker.swift */; };
+		B258118E1DF907C4007B9A75 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B258118D1DF907C4007B9A75 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		772B577223B266757B8826D3 /* Pods-Parking PalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B73590A7F0423B48C8A15BC /* Pods-Parking PalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalUITests/Pods-Parking PalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B21BE1FE1DF80FBD00E62BE2 /* CreaterMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaterMarker.swift; sourceTree = "<group>"; };
+		B258118D1DF907C4007B9A75 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F3E4D1EE278B10BFDFB29E54 /* Pods-Parking PalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking PalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking PalTests/Pods-Parking PalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F531841F5672BE4C7E43E304 /* Pods-Parking Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Pal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking Pal/Pods-Parking Pal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B258118E1DF907C4007B9A75 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +161,7 @@
 		DDF4287FB07F76D0358A0E08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B258118D1DF907C4007B9A75 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
