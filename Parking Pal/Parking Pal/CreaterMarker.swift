@@ -83,7 +83,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
                     self.present(alert2, animated: true, completion: nil)
                 } else {
                     let changeText:String = setPriceBox.text!
-                    dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot, Price: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+                    dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot, Price/Hr: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
                     mapView.addAnnotation(dropPin)
                 }
                 
@@ -118,7 +118,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
             self.present(alert2, animated: true, completion: nil)
         } else {
             let changeText:String = setPriceBox.text!
-            dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Parking Lot, Price: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+            dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Parking Lot, Price/Hr: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
             mapView.addAnnotation(dropPin)
         }
         
