@@ -13,6 +13,11 @@ import MapKit
 
 class CreaterMarker: UIViewController, MKMapViewDelegate {
     
+    var delegate = UIApplication.shared.delegate as! AppDelegate //non-optional variable
+    
+
+
+    
     func addBounceAnimationToView(view: UIView)
     {
         let bounceAnimation = CAKeyframeAnimation(keyPath: "transform.scale") as CAKeyframeAnimation
@@ -63,17 +68,20 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
     }
     
 
-    func showCustomAnnotationWithButton()
-    {
-        
-        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
+    @IBAction func callFunc(_ sender: AnyObject) {
+        let myLocation = CLLocationCoordinate2DMake(37.87576, -122.25735)
         // Drop a pin
-        let dropPin = CustomAnnotation(coordinate: newYorkLocation, title: "New York", subtitle: "New York Subtitle", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
+        let dropPin = CustomAnnotation(coordinate: myLocation, title: "Upper Hearst Parking Structure", subtitle: "Upper Hearst", detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
         mapView.addAnnotation(dropPin)
-        let initialLocation = CLLocation(latitude: newYorkLocation.latitude, longitude: newYorkLocation.longitude)
+        let initialLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
         centerMapOnLocation(location: initialLocation)
-        
     }
+//    func showCustomAnnotationWithButton()
+//    {
+//        
+//        
+//        
+//    }
     
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
@@ -83,19 +91,24 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
     }
     
     @IBOutlet weak var mapView: MKMapView!
-    
+    var markers = [GMSMarker]()
+    @IBOutlet weak var latBox: UITextField!
+    @IBOutlet weak var longBox: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var currentLocButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.delegate = self
-        let position = CLLocation(latitude: 37.8686, longitude: -122.2631)
+        let position = CLLocation(latitude: 37.8756, longitude: -122.2588)
         checkLocationAuthorizationStatus()
         centerMapOnLocation(location: position)
-        let rsfLocation = CLLocationCoordinate2DMake(37.8686, -122.2631)
+        let mainLocation = CLLocationCoordinate2DMake(37.8756, -122.2588)
         // Drop a pin
         let dropPin = MKPointAnnotation()
-        dropPin.coordinate = rsfLocation
-        dropPin.title = "Berkeley RSF"
+        dropPin.coordinate = mainLocation
+        dropPin.title = "Soda Hall"
         mapView.addAnnotation(dropPin)
+        currentLocButton.addTarget(self, action: "callFunc:", for: .touchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
@@ -106,10 +119,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate {
     
     
 //    override func loadView() {
-//        var markers = [GMSMarker]()
-//        var xCoord: UITextView
-//        var yCoord: UITextView
-//        var sendButton: UIButton
+
         
 //        let camera = GMSCameraPosition.camera(withLatitude: 37.8716,
 //                                              longitude:-122.2727,

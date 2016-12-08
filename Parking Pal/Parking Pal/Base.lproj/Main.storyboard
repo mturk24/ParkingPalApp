@@ -61,6 +61,7 @@
         <!--Creater Marker-->
         <scene sceneID="NFj-tu-wDh">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ic-cI-WHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cU8-pc-BDa" customClass="CreaterMarker" customModule="Parking_Pal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R4W-dA-KcX"/>
@@ -93,6 +94,9 @@
                                 <frame key="frameInset" minX="114" minY="596" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Use Current Location"/>
+                                <connections>
+                                    <action selector="callFunc:" destination="cU8-pc-BDa" eventType="touchUpInside" id="BGQ-fi-XMn"/>
+                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wPZ-iz-45T">
                                 <frame key="frameInset" minY="132" width="375" height="361"/>
@@ -109,10 +113,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="currentLocButton" destination="IlZ-Ge-HqP" id="TYq-fM-qaB"/>
+                        <outlet property="latBox" destination="kjq-eW-Z4j" id="MEm-fR-yWD"/>
+                        <outlet property="longBox" destination="Xvz-SR-EsP" id="1hX-AM-SgM"/>
                         <outlet property="mapView" destination="wPZ-iz-45T" id="vPe-9x-vYr"/>
+                        <outlet property="sendButton" destination="nU2-ja-pmx" id="IK5-BV-nPu"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ic-cI-WHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1836" y="745.27736131934034"/>
         </scene>
@@ -202,7 +209,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MHu-aQ-Wja" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wGj-rv-PJC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wGj-rv-PJC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
