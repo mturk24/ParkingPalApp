@@ -12,6 +12,7 @@ import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var markers = [GMSMarker]()
 
     var window: UIWindow?
 

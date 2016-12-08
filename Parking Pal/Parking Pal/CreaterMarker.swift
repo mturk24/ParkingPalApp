@@ -85,6 +85,20 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
                     let changeText:String = setPriceBox.text!
                     dropPin = CustomAnnotation(coordinate: myLocation, title: "New Location", subtitle: "Parking Lot, Price/Hr: " + "$" + changeText, detailURL: NSURL(string: "https://google.com")!, enableInfoButton : true)
                     mapView.addAnnotation(dropPin)
+                    
+                    let marker = GMSMarker()
+                    marker.position = CLLocationCoordinate2D(latitude: Double(latBox.text!)!, longitude: Double(longBox.text!)!)
+                    marker.appearAnimation = kGMSMarkerAnimationPop
+                    marker.icon = UIImage(named: "flag_icon")
+                    marker.snippet = "Parking Lot, Price/Hr: " + "$" + changeText
+                    delegate.markers.append(marker)
+                    //        let marker = GMSMarker()
+                    //        marker.position = CLLocationCoordinate2D(latitude: 37.87576, longitude: -122.25735)
+                    //        marker.appearAnimation = kGMSMarkerAnimationPop
+                    //        marker.icon = UIImage(named: "flag_icon")
+                    //        marker.map = mapView
+                    //        markers.append(marker)
+                    //        marker.snippet = "Percent Full: 80%\nPrice: $5/hr"
                 }
                 
                 
@@ -146,6 +160,7 @@ class CreaterMarker: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         var currentLocation = CLLocation()
         var currentLong = currentLocation.coordinate.longitude;
         var currentLat = currentLocation.coordinate.latitude;
+        
         print(currentLat, "This is lat")
         print(currentLong, "This long")
         
