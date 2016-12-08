@@ -24,15 +24,17 @@ class CreaterMarker: UIViewController {
                                               longitude:122.2727,
                                               zoom:15)
         let mapView = GMSMapView.map(withFrame: .zero, camera:camera)
+        mapView.isMyLocationEnabled = true
+        self.view = mapView
         
 //        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: 41.887, longitude: -87.622)
+//        marker.position = CLLocationCoordinate2D(latitude: 36.8684, longitude: 122.2636)
 //        marker.appearAnimation = kGMSMarkerAnimationPop
 //        marker.icon = UIImage(named: "flag_icon")
 //        marker.map = mapView
 //        markers.append(marker)
 //        marker.snippet = "Percent Full: 80%\nPrice: $5/hr"
-//        
+////
 //        let marker2 = GMSMarker()
 //        marker2.position = CLLocationCoordinate2D(latitude: 41.885, longitude: -87.622)
 //        marker2.appearAnimation = kGMSMarkerAnimationPop
@@ -49,6 +51,6 @@ class CreaterMarker: UIViewController {
 //        markers.append(marker3)
 //        marker3.snippet = "Percent Full: 30%\nPrice: $15/hr"
         
-        view = mapView
+        
     }
 }
